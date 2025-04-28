@@ -14,4 +14,6 @@ ExifTool executable is started only once when Directory Opus is started. This ma
   * Download the MSI from the [releases page](https://github.com/PolarGoose/DOpus-Scripting-Extensions/releases) and install it
 * Download the `.js` file from [this project's releases page](https://github.com/PolarGoose/DirectoryOpus-ExifTool-Dialog/releases)
 * Copy the `.js` file to the `%AppData%\GPSoftware\Directory Opus\Script AddIns` folder
-* The command `Open ExifTool Dialog` becomes available in Directory Opus `Command Editor` in the `Customize->User Commands`. Using this command you can create a custom button or a hotkey.
+* The command `OpenExifToolDialog` becomes available in Directory Opus `Command Editor`.<br>Using this command, you can create a custom button or a hotkey.<br>
+  The `FILE` parameter is a file's full name.
+  <img src="doc/commandEditor.png" width="70%" />
