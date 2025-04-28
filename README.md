@@ -15,5 +15,13 @@ ExifTool executable is started only once when Directory Opus is started. This ma
 * Download the `.js` file from [this project's releases page](https://github.com/PolarGoose/DirectoryOpus-ExifTool-Dialog/releases)
 * Copy the `.js` file to the `%AppData%\GPSoftware\Directory Opus\Script AddIns` folder
 * The command `OpenExifToolDialog` becomes available in Directory Opus `Command Editor`.<br>Using this command, you can create a custom button or a hotkey.<br>
-  The `FILE` parameter is a file's full name.
+  ```
+  @noprogress
+  OpenExifToolDialog FILE {filepath}
+  ```
+  The `FILE` parameter is a file's full name.<br>
+  The `@noprogress` attribute is needed to avoid the automatic progress bar dialog interfering with the ExifTool dialog.<br>
   <img src="doc/commandEditor.png" width="70%" />
+
+# References
+* Discussion of this project on DOpus forum: [ExifTool GUI dialog](https://resource.dopus.com/t/exiftool-gui-dialog/55540/1)
